@@ -1,0 +1,132 @@
+.card {
+	text-align: center;
+	background-color: #f2f2f2;
+	border-radius: 0px;
+	margin: 1rem 1rem 1rem 1rem ;
+	padding-bottom: 1rem;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;		
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: grey;
+}
+
+@keyframes pokemon-up {
+	0%,
+	100% {
+	transform: translateY(0);
+	}	
+
+	50% {
+	transform: translateY(-.5rem);
+	}
+}
+
+@keyframes index-up {
+	0%,
+	100% {
+	transform: translateY(0);
+	}	
+
+	50% {
+	transform: translateY(-.5rem);
+	}
+}
+
+.card:hover {
+	background-color: #CAFEFF;
+	animation: pokemon-up .3s; 
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: grey;
+	animation: index-up .3s;
+	cursor: pointer;
+}
+
+.fuego {
+	background-color: #FF8128;
+}
+
+.agua {
+	background-color: #2B9AF2;
+}
+
+.bicho {
+	background-color: #88C63A;
+}
+
+.veneno {
+	background-color: #CF63F4;	
+}
+
+.electrico {
+	background-color: #F6E327;
+}
+
+.planta {
+	background-color: #3CFD7B;
+}
+
+.volador {
+	background-color: #55C2F8;
+}
+
+.roca {
+	background-color: #CC986A;
+}
+
+.tierra {
+	background-color: #F5BC8C;
+}
+
+.dragon {
+	background-color: #C481F9;
+}
+
+.lucha {
+	background-color: #D7523A;
+}
+
+.normal {
+	background-color: #D4C0A7;
+}
+
+.psiquico {
+	background-color: #FF61CA;
+}
+
+.pokemon-tipo {
+	width: 25%;
+	text-align: center;
+	display: flex;
+}
+
+.pokemon-nombre {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+.pokemon-descripcion {
+	background-color: #C9C9C9;
+}
