@@ -1,9 +1,48 @@
-.card {
-	text-align: center;
-	background-color: #f2f2f2;
-	border-radius: 0px;
-	margin: 1rem 1rem 1rem 1rem ;
-	padding-bottom: 1rem;
+* {
+	box-sizing: border-box;	
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  .row {
+	display: block;
+}
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 ul {
@@ -12,10 +51,17 @@ ul {
 	padding: 0;		
 	overflow: hidden;
 	background-color: #333;
+	margin-bottom: 1%;
 }
 
 li {
 	float: left;
+}
+
+li:hover {
+	background-color: grey;
+	animation: index-up .3s;
+	cursor: pointer;
 }
 
 li a {
@@ -52,81 +98,46 @@ li a:hover {
 	}
 }
 
+.card {
+	text-align: center;
+	background-color: #f2f2f2;
+	border-radius: 0px;
+	/*margin: 1rem;*/
+	padding-bottom: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
 .card:hover {
 	background-color: #CAFEFF;
 	animation: pokemon-up .3s; 
 	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(35, 173, 278, 1);
 }
 
-li:hover {
-	background-color: grey;
-	animation: index-up .3s;
+.img:hover{
+	animation: pokemon-up .3s;
 	cursor: pointer;
 }
 
-.fuego {
-	background-color: #FF8128;
-}
-
-.agua {
-	background-color: #2B9AF2;
-}
-
-.bicho {
-	background-color: #88C63A;
-}
-
-.veneno {
-	background-color: #CF63F4;	
-}
-
-.electrico {
-	background-color: #F6E327;
-}
-
-.planta {
-	background-color: #3CFD7B;
-}
-
-.volador {
-	background-color: #55C2F8;
-}
-
-.roca {
-	background-color: #CC986A;
-}
-
-.tierra {
-	background-color: #F5BC8C;
-}
-
-.dragon {
-	background-color: #C481F9;
-}
-
-.lucha {
-	background-color: #D7523A;
-}
-
-.normal {
-	background-color: #D4C0A7;
-}
-
-.psiquico {
-	background-color: #FF61CA;
-}
-
 .pokemon-tipo {
-	width: 25%;
+	width: 30%;
 	text-align: center;
+}
+
+.pokemon-tipos {
 	display: flex;
 }
 
 .pokemon-nombre {
+	margin: 1rem 0 .6rem;
 	font-size: 1.5rem;
 	font-weight: normal;
 }
 
 .pokemon-descripcion {
 	background-color: #C9C9C9;
+	margin: 0 1rem 0 1rem;
 }
+
