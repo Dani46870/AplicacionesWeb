@@ -145,9 +145,8 @@ li a:hover {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  width: 280px;
+  height: 350px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -180,7 +179,7 @@ li a:hover {
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: ;
   color: black;
 }
 
